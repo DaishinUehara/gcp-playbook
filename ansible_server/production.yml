@@ -1,0 +1,8 @@
+# development playbook
+-hosts: localhost
+  connection: local_prd
+  tasks:
+    roles:
+      - role1
+      - role2
+
