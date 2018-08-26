@@ -9,6 +9,6 @@ set -Ceu
 sudo apt-get install -y ansible
 
 if [ ! -f ~/.ansible.cfg ]; then
-    cp ~/ansible.cfg ~/.ansible.cfg
+    cp ansible.cfg ~/.ansible.cfg
 fi
 

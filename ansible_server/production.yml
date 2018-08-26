@@ -1,9 +1,11 @@
 ---
 # development playbook
-- hosts: local_prd
+- hosts: production
   connection: local
-  tasks:
-    roles:
-      - role1
-      - role2
+  #  tasks:
+  #  - name: include production task
+  #    include: tasks/production.yml
+  roles:
+    - role1
+    - role2
 

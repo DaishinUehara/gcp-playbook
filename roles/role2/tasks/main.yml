@@ -1,2 +1,5 @@
 ---
 # tasks file for role2
+- name: debug message role 2
+  debug: msg="role2"
+

@@ -1,9 +1,11 @@
 ---
 # development playbook
-- hosts: local_dev
+- hosts: development
   connection: local
-  tasks:
-    roles:
-      - role1
-      - role2
+  #  tasks:
+  #  - name: indclude development task
+  #    include: tasks/development.yml
+  roles:
+    - role1
+    - role2
 
