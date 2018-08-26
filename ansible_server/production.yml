@@ -1,6 +1,7 @@
+---
 # development playbook
--hosts: localhost
-  connection: local_prd
+- hosts: local_prd
+  connection: local
   tasks:
     roles:
       - role1

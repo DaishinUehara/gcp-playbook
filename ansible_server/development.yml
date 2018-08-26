@@ -1,5 +1,6 @@
+---
 # development playbook
--hosts: localhost
+- hosts: local_dev
   connection: local
   tasks:
     roles:
