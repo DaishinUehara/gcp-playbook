@@ -3,3 +3,11 @@
 - name: debug message role 2
   debug: msg="role2"
 
+- name: debug message development_env
+  debug: msg="グループ階層1 {{ grp1 }}"
+
+- name: debug message local_dev
+  debug: msg="グループ階層2 {{ grp2 }}"
+
+- name: debug message host
+  debug: msg="ホスト変数 {{ hst }}"

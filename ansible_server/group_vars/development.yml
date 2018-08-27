@@ -1,3 +1,6 @@
 ---
 devorpord: "development"
 connection: local
+
+grp1: "開発環境"
+

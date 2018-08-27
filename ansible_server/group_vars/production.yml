@@ -1,3 +1,5 @@
 ---
 devorpord: "production"
 connection: local
+
+grp1: "本番環境"
