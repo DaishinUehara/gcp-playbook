@@ -5,24 +5,24 @@
 
 - block:
   - name: debug message development_env
-    debug: msg="グループ階層1 {{ development.grp1 }}"
+    debug: msg="グループ階層1 {{ grp1 }}"
 
   - name: debug message local_dev
-    debug: msg="グループ階層2 {{ development.localdev.grp2 }}"
+    debug: msg="グループ階層2 {{ grp2 }}"
 
   - name: debug message host
-    debug: msg="ホスト変数 {{ development.local_dev.localhost.hst }}"
+    debug: msg="ホスト変数 {{ hst }}"
 
   tags: dev
 
 - block:
   - name: debug message production_env
-    debug: msg="グループ階層1 {{ production.grp1 }}"
+    debug: msg="グループ階層1 {{ grp1 }}"
 
   - name: debug message local_dev
-    debug: msg="グループ階層2 {{ production.localdev.grp2 }}"
+    debug: msg="グループ階層2 {{ grp2 }}"
 
   - name: debug message host
-    debug: msg="ホスト変数 {{ production.local_prd.localhost.hst }}"
+    debug: msg="ホスト変数 {{ hst }}"
 
   tags: prd
