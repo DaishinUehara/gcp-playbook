@@ -3,11 +3,26 @@
 - name: debug message role 2
   debug: msg="role2"
 
-- name: debug message development_env
-  debug: msg="グループ階層1 {{ grp1 }}"
+- block:
+  - name: debug message development_env
+    debug: msg="グループ階層1 {{ all.development.grp1 }}"
 
-- name: debug message local_dev
-  debug: msg="グループ階層2 {{ grp2 }}"
+  - name: debug message local_dev
+    debug: msg="グループ階層2 {{ all.development.localdev.grp2 }}"
 
-- name: debug message host
-  debug: msg="ホスト変数 {{ hst }}"
+  - name: debug message host
+    debug: msg="ホスト変数 {{ all.development.local_dev.localhost.hst }}"
+
+  tags: dev
+
+- block:
+  - name: debug message production_env
+    debug: msg="グループ階層1 {{ all.production.grp1 }}"
+
+  - name: debug message local_dev
+    debug: msg="グループ階層2 {{ all.production.localdev.grp2 }}"
+
+  - name: debug message host
+    debug: msg="ホスト変数 {{ all.production.local_prd.localhost.hst }}"
+
+  tags: prd
