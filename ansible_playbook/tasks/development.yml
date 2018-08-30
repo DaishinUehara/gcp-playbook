@@ -1,0 +1,6 @@
+---
+
+- name: development task
+  debug:
+    msg: "{{ devorprod }}""
+

@@ -1,0 +1,8 @@
+---
+- debug: msg={{ devorprod }}
+
+- name: role1,2test
+  roles:
+    - role1
+    - role2
+
