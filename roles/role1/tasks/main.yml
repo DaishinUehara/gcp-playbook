@@ -7,7 +7,7 @@
   - name: debug message development_env
     debug: msg="グループ階層1 {{ grp1 }}"
 
-  - name: debug message dev_local
+  - name: debug message lv2 group
     debug: msg="グループ階層2 {{ grp2 }}"
 
   - name: debug message host
@@ -19,7 +19,7 @@
   - name: debug message production_env
     debug: msg="グループ階層1 {{ grp1 }}"
 
-  - name: debug message dev_local
+  - name: debug message lv2 group
     debug: msg="グループ階層2 {{ grp2 }}"
 
   - name: debug message host
